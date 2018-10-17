@@ -128,7 +128,7 @@ function letConvert() {
 
                     if (hundred == '1') {
                         decimalConvertFr(nbrDec, unit, decimal);
-                        document.querySelector('#result').innerHTML = 'cent ' + word;
+                        document.querySelector('#result').innerHTML =uniteArrayFr[parseInt(hundred) - 1] + 'cent ' + word;
                     } else {
                         decimalConvertFr(nbrDec, unit, decimal);
                         document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent ' + word;
