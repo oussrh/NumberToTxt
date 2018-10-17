@@ -117,7 +117,7 @@ function letConvert() {
 
                 if (decimal == '0' && unit == '0') {
                     if (hundred == '1') {
-                        document.querySelector('#result').innerHTML = 'cent a ';
+                        document.querySelector('#result').innerHTML = 'cent';
                     } else {
                         document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent ';
                     }
