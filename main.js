@@ -98,8 +98,6 @@ function letConvert() {
             if (nbrSize == 1) {
                 word = uniteArrayFr[nbr - 1];
                 document.querySelector('#result').innerHTML = word;
-                // let theNumber = prompt('enter un numero entre 0 et 999', '');
-                // convertToWrd(theNumber);
 
             } else if (nbrSize == 2) {
                 word = String(nbr);
@@ -109,8 +107,6 @@ function letConvert() {
                 decimalConvertFr(nbr, unit, decimal);
 
                 document.querySelector('#result').innerHTML = word;
-                // let theNumber = prompt('enter un numero entre 0 et 999', '');
-                // convertToWrd(theNumber);
 
             } else if (nbrSize == 3) {
                 word = String(nbr);
@@ -121,13 +117,13 @@ function letConvert() {
 
                 if (decimal == '0' && unit == '0') {
                     if (hundred == '1') {
-                        document.querySelector('#result').innerHTML = 'cent';
+                        document.querySelector('#result').innerHTML = 'cent ';
                     } else {
-                        document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent';
+                        document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent ';
                     }
 
                 } else if (decimal == '0') {
-                    document.querySelector('#result').innerHTML = 'cent ' + uniteArrayFr[parseInt(unit) - 1];
+                    document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent ' + uniteArrayFr[parseInt(unit) - 1];
                 } else {
 
                     if (hundred == '1') {
@@ -138,18 +134,11 @@ function letConvert() {
                         document.querySelector('#result').innerHTML = uniteArrayFr[parseInt(hundred) - 1] + ' cent ' + word;
                     }
                 }
-
-                // let theNumber = prompt('enter un numero entre 0 et 999', '');
-                // convertToWrd(theNumber);
             }
         } else if (nbr == 0) {
             document.querySelector('#result').innerHTML = 'Zero';
-            // let theNumber = prompt('enter un numero entre 0 et 999', '');
-            // convertToWrd(theNumber);
         } else {
             alert('enter PLEASE a number between 0 and 999');
-            // let theNumber = prompt('enter un numero entre 0 et 999', '');
-            // convertToWrd(theNumber);
         }
     }
 
