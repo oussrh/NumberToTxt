@@ -1,0 +1,44 @@
+*{margin:0;padding:0;}
+
+input[type=radio],label{
+    cursor: pointer;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formConvert{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#thenumber{
+    width: 20%;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+button{
+    margin-top: 10px;
+}
+
+#result{
+    font:bold 30px arial,sans-serif;
+}
